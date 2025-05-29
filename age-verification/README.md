@@ -72,14 +72,21 @@ The modal template uses ACF fields for dynamic content management:
 2. Set up the required ACF option fields (see ACF Integration section above)
 3. Include jQuery (script dependency)
 4. Add the `age-verification.js` script to your WordPress theme
-5. Include the `footer.php` template in your WordPress theme or copy its HTML structure to your existing templates
-6. Customize the CSS styling in `footer.php` as needed for your theme
+5. Include the `modal.css` stylesheet in your theme (or copy styles to your main stylesheet)
+6. Include the `footer.php` template in your WordPress theme or copy its HTML structure to your existing templates
 7. Ensure content blocks use the `.code-block` class for age-based visibility control
+
+**To enqueue the CSS file in WordPress:**
+Add this to your theme's `functions.php`:
+```php
+wp_enqueue_style('age-verification-modal', get_template_directory_uri() . '/age-verification/modal.css');
+```
 
 ## Files Included
 
 - `age-verification.js` - Main JavaScript functionality
-- `footer.php` - Complete HTML template with modal structure and basic styling
+- `footer.php` - Complete HTML template with modal structure
+- `modal.css` - Professional styling for the modal components
 - `README.md` - Documentation
 
 ## Dependencies
