@@ -1,5 +1,11 @@
 # WordPress Tools
 
+> **⚠️ DEPRECATED:** This repository has been merged into [wp-ops](https://github.com/imagewize/wp-ops). Please use that repository for the latest updates and documentation.
+>
+> See [DEPRECATED.md](DEPRECATED.md) for migration details.
+
+---
+
 A collection of tools, scripts, and utilities for building, optimizing, and managing WordPress sites efficiently.
 
 ## Repository Structure
